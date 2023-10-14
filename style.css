@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Libre Baskerville", serif;
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  z-index: 1;
+}
+
+header .logo a {
+  font-size: 30px;
+  color: yellow;
+  padding: 15px 30px;
+}
+
+header .logo a span {
+  color: orange;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li a {
+  margin: 5px 20px;
+  font-size: 18px;
+  color: yellow;
+  padding: 10px 10px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Contents */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(96, 76, 76, 6),
+      rgba(96, 76, 76, 6)
+    ),
+    url(https://pin.it/3KtJpXY);
+  background-position: center bottom;
+  background: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
