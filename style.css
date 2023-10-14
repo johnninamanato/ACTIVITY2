@@ -12,6 +12,12 @@ html {
   font-family: "Libre Baskerville", serif;
   scroll-behavior: smooth;
 }
+body {
+  background-image: url("https://pikwizard.com/pw/medium/33be3c6fa7f52ee4796cfd414a10744c.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 img {
   width: 100%;
@@ -30,12 +36,12 @@ header {
 
 header .logo a {
   font-size: 30px;
-  color: yellow;
+  color: black;
   padding: 15px 30px;
 }
 
 header .logo a span {
-  color: orange;
+  color: rgb(28, 143, 250);
 }
 
 header nav ul {
@@ -45,7 +51,7 @@ header nav ul {
 header nav ul li a {
   margin: 5px 20px;
   font-size: 18px;
-  color: yellow;
+  color: blue;
   padding: 10px 10px;
 }
 
@@ -63,14 +69,64 @@ header nav ul li a:hover {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(96, 76, 76, 6),
-      rgba(96, 76, 76, 6)
-    ),
-    url(https://pin.it/3KtJpXY);
-  background-position: center bottom;
-  background: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
+
+.content h2 {
+  font-size: 32px;
+  padding-left: 5px;
+  color: black;
+}
+
+.content p {
+  font-size: 22px;
+  color: white;
+}
+
+/*Menu*/
+
+.menu {
+  background-color: blanchedalmond;
+  width: 100%;
+}
+
+.menu .menu-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-header h3 {
+  color: blue;
+  padding: 10px 30px;
+}
+
+.menu .menu-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.menu .menu-content .coffee-drinks {
+  width: 250px;
+}
+
+.menu .menu-content .coffee-drinks .coffee-drinks-image img {
+  border-radius: 50%;
+}
+/*
+.menu .menu-content .coffee-drinks-description {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.menu .menu-content .coffee-drinks-description h2 {
+  color: blue;
+}
+
+.menu .menu-content .coffee-drinks-description label {
+  margin-top: 10px;
+  color: orange;
+} */
