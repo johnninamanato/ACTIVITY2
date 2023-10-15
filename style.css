@@ -145,7 +145,7 @@ nav ul li a{
   padding: 10px 30px;
 }
 
-.menu .menu-content {
+/*.menu .menu-content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -173,6 +173,25 @@ nav ul li a{
 .menu .menu-content .coffee-drinks-description label {
   margin-top: 10px;
   color: orange;
+}*/
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.section__pic-container {
+  display: flex;
+  width: 300px;
+  margin: 50px;
+  gap: 5rem;
+}
+
+.menu-pic {
+  border-radius: 50%;
 }
 
 /*Coffee*/
