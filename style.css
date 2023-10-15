@@ -113,10 +113,10 @@ header nav ul li a:hover {
   width: 250px;
 }
 
-.menu .menu-content .coffee-drinks .coffee-drinks-image img {
+.menu .menu-content img {
   border-radius: 50%;
 }
-/*
+
 .menu .menu-content .coffee-drinks-description {
   text-align: center;
   margin-top: 10px;
@@ -129,61 +129,4 @@ header nav ul li a:hover {
 .menu .menu-content .coffee-drinks-description label {
   margin-top: 10px;
   color: orange;
-} */
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Quesha", "Bold-italic";
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #bb6b24;
-  color: #080808;
-}
-
-.logo {
-  width: 300px;
-}
-
-.header-container {
-  background-color: #37251b;
-  padding: 10px 5%;
-  color: #ffff;
-}
-
-nav {
-  display: flex;
-  align-items: Center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-nav ul li a {
-  color: #ffff;
-  text-decoration: none;
-  font-size: 20px;
-  position: relative;
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0%;
-  height: 3px;
-  background: #e4bc84;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.5s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
 }
