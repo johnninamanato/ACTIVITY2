@@ -196,6 +196,11 @@ nav ul li a:hover::after {
   border-radius: 50%;
 }
 
+.article-container {
+  border-radius: 2rem;
+  border-color: solid black;
+}
+
 /*Coffee*/
 .coffee-container {
   text-align: center;
