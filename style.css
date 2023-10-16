@@ -186,12 +186,13 @@ nav ul li a:hover::after {
 
 .section__pic-container {
   display: flex;
-  width: 300px;
+  justify-content: space-evenly;
   margin: 50px;
   gap: 5rem;
 }
 
 .menu-pic {
+  width: 250px;
   border-radius: 50%;
 }
 
@@ -203,10 +204,7 @@ nav ul li a:hover::after {
 .coffee-container .row {
   margin-bottom: 20px;
 }
-.coffee-pic {
-  width: 80px;
-  display: inline-block;
-}
+
 /*Back Button Pang return sa Home Page*/
 #drinks-back {
   background-color: #5ce1e6;
