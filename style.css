@@ -364,9 +364,3 @@ form .form-content input:valid ~ span:before {
   cursor: pointer;
   transition: all 0.5s ease-in;
 }
-
-.contact-body form button:hover {
-  background-color: palevioletred;
-}
-
-/*Footer*/
