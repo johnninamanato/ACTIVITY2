@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+#logo img{
+  width:100%;
+  border-top: 10px;
+}
 img {
   width: 100%;
 }
@@ -35,7 +39,7 @@ header .logo a {
 }
 
 header .logo a span {
-  color: rgb(28, 143, 250);
+  color: #ad6d2f;
 }
 
 header nav ul {
@@ -48,20 +52,7 @@ header nav ul li a {
   padding: 10px 10px;
 }
 
-header nav ul li a:hover {
-  border-bottom: 2px solid white;
-}
-
-a,
-a:active,
-a:link,
-a:visited {
-  color: #222222;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* Navigation*/
+/*Header Navigation*/
 nav {
   margin: 0;
   display: flex;
@@ -82,7 +73,7 @@ nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: #e4bc84;
+  background: #37251b;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -119,12 +110,12 @@ nav ul li a:hover::after {
 .content h2 {
   font-size: 32px;
   padding: 5px;
-  color: black;
+  color: #37251b;
 }
 
 .content p {
   font-size: 22px;
-  color: white;
+  color: #80411e;
 }
 
 /*Menu*/
@@ -146,80 +137,224 @@ nav ul li a:hover::after {
   padding: 10px 30px;
 }
 
+.menu-header h4{
+  color:blue;
+  padding:10px 20px;
+}
+
 .menu .menu-content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 0;
   flex-wrap: wrap;
+  background-color: bisque;
 }
 
-.menu .menu-content .coffee-drinks {
-  width: 250px;
-}
+.menu .menu-content .hot-coffees,.frappe-coffees,.tea-coffees{
+  width:250px;
+} 
 
-.menu .menu-content img {
+.menu .menu-content .hot-coffees .hot-coffees-image img {
   border-radius: 50%;
 }
 
-.menu .menu-content .coffee-drinks-description {
+.menu .menu-content .frappe-coffees .frappe-coffees-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .tea-coffees .tea-image img {
+  border-radius: 50%;
+}
+
+.menu .menu-content .hot-coffees-body,
+.frappe-coffees-body,.tea-body{
   text-align: center;
+  margin-top: 25px;
+}
+
+.menu .menu-content .hot-coffees-body h2,
+.frappe-coffees-body h2,.tea-body h2{
+  color: brown;
+}
+
+.menu .menu-content .hot-coffees-body label,
+.frappe-coffees-body label,.tea-body label{
   margin-top: 10px;
+  color: #353535;
 }
 
-.menu .menu-content .coffee-drinks-description h2 {
-  color: blue;
+/*Drinks*/
+
+.drinks{
+  background-color: darkcyan;
+  width:100%;
 }
 
-.menu .menu-content .coffee-drinks-description label {
-  margin-top: 10px;
-  color: orange;
+.drinks .drinks-header{
+  display:flex;
+  padding:10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.section {
+.shop-heade h3{
+  color:aquamarine;
+  padding:10px 30px;
+}
+
+.shop-header h4{
+  color:palevioletred;
+  padding:10px 20px;
+}
+
+.shop-box{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 50px;
+  background-color: #e4bc84;
+  padding:50px 0;
   flex-wrap: wrap;
 }
-
-.section__pic-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px;
-  gap: 5rem;
+.shop-box .card{
+  width:280px;
+  margin: 20px; 
 }
 
-.menu-pic {
-  width: 250px;
-  border-radius: 50%;
+.shop-box .card-img{
+  width: 100%;
+  height: 290px;
+  overflow: hidden;
 }
 
-/*Coffee*/
-.coffee-container {
-  text-align: center;
+.shop-box .card-img img:hover{
+  transform: scale(1.1);
+  transition: transform .5s ease-in-out;
 }
 
-.coffee-container .row {
-  margin-bottom: 20px;
-}
-
-/*Back Button Pang return sa Home Page*/
-#drinks-back {
-  background-color: #5ce1e6;
+.shop-box .card-body{
+  padding: 20px;
   color: white;
-  font-size: 50px;
-  padding: 5px 20px;
+  border:3px solid black;
 }
 
-#drinks-back:hover,
-#drinks-back:active {
-  background-color: #53cacf;
+.shop-box .card-body h3{
+  padding: 10px 0;
 }
 
-.drinks-btn {
+.shop-box .card-body i{
+  color:yellow;
+  font-size: 10px;
+  position: relative;
+  bottom: 5px;
+}
+
+/*Cotacts*/
+
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  border-top: 2px solid black;
+}
+
+.contact .contact-box{
+  flex: 1;
+}
+
+.contact .contact-box .contact-image,
+.contact .contact-box .contact-body{
+  height:100%;
+}
+
+.contact img{
+  width: 100%;
+  height:100%;
+}
+
+.contact-image img{
+  opacity:.9;
+}
+
+.contact-body{
+  background-color: peru;
+  height: 100%;
+  border-left:2px solid black;
+}
+
+.contact-body form{
+  padding:50px 40px;
+  box-sizing: border-box;
+}
+
+.contact-body h2{
+  color:plum;
   font-size: 20px;
-  padding: 25px 0;
-  width: 130px;
 }
+
+form .form-content{
+  position:relative;
+  margin: 30px 0;
+  border-bottom: 2px solid black;
+}
+
+form .form-content input{
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  font-size: 18px;
+  border: none;
+  background: none;
+  outline: 1ps solid black;
+  color: white;
+}
+
+form .form-content label{
+  position: Absolute;
+  top: 50%;
+  left: 5px;
+  color: black;
+  transform: translateY(-50%);
+  font-size:15px;
+  transition: .6s;
+  pointer-events: none;
+}
+
+form .form-content span::before{
+  content:'';
+  position: absolute;
+  top:40px;
+  left:0;
+  width: 0%;
+  height:2px;
+  background: midnightblue;
+  transform: .5s;
+}
+
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+  top:-15px;
+  color:blueviolet;
+}
+
+form .form-content input:focus~span:before,
+form .form-content input:valid~span:before{
+  width: 100%;
+}
+
+.contact-body form button{
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  background-color: firebrick;
+  color:white;
+  border: 5px;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+
+.contact-body form button:hover{
+  background-color: palevioletred;
+}
+
+/*Footer*/
