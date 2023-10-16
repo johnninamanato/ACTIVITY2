@@ -12,21 +12,6 @@ html {
   font-family: "Libre Baskerville", serif;
   scroll-behavior: smooth;
 }
-body {
-  background-image: url("https://pikwizard.com/pw/medium/33be3c6fa7f52ee4796cfd414a10744c.avif");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-a,
-a:active,
-a:link,
-a:visited {
-    color: #222222;
-    text-decoration: none;
-    font-size: 20px;
-}
 
 img {
   width: 100%;
@@ -38,7 +23,7 @@ header {
   justify-content: space-between;
   padding: 40px;
   width: 100%;
-  height: 70%;
+  height: 70px;
   position: absolute;
   z-index: 1;
 }
@@ -60,50 +45,56 @@ header nav ul {
 header nav ul li a {
   margin: 5px 20px;
   font-size: 18px;
-  color: blue;
   padding: 10px 10px;
 }
 
 header nav ul li a:hover {
   border-bottom: 2px solid white;
 }
+
+a,
+a:active,
+a:link,
+a:visited {
+  color: #222222;
+  text-decoration: none;
+  font-size: 20px;
+}
+
 /* Navigation*/
-nav{
+nav {
+  margin: 0;
   display: flex;
   align-items: Center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-nav ul li{
-  display: inline-block;
   list-style: none;
-  margin: 10px 20px; 
 }
 
-nav ul li a{
-  color:#ffff;
+nav ul li a {
+  color: #ffff;
   text-decoration: none;
   font-size: 20px;
   position: relative;
 }
 
- nav ul li a::after{
-  content:'';
+nav ul li a::after {
+  content: "";
   width: 0%;
   height: 3px;
-  background:#e4bc84 ;
+  background: #e4bc84;
   position: absolute;
   left: 0;
-  bottom:-6px;
+  bottom: -6px;
   transition: 0.5s;
- }
+}
 
- nav ul li a:hover::after{
-  width:100%;
- }
+nav ul li a:hover::after {
+  width: 100%;
+}
 
-/* Contents */
+/* Content */
+
 .content {
   display: flex;
   flex-direction: column;
@@ -113,11 +104,21 @@ nav ul li a{
   position: relative;
   min-height: 100vh;
   width: 100%;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(96, 76, 76, 0.6),
+      rgba(96, 76, 76, 0.6)
+    ),
+    url("https://pikwizard.com/pw/medium/33be3c6fa7f52ee4796cfd414a10744c.avif");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content h2 {
   font-size: 32px;
-  padding-left: 5px;
+  padding: 5px;
   color: black;
 }
 
@@ -195,30 +196,31 @@ nav ul li a{
 }
 
 /*Coffee*/
-.coffee-container{
-  text-align: center; 
+.coffee-container {
+  text-align: center;
 }
 
-.coffee-container .row{
+.coffee-container .row {
   margin-bottom: 20px;
 }
-.coffee-pic{
+.coffee-pic {
   width: 80px;
-  display:inline-block;
+  display: inline-block;
 }
 /*Back Button Pang return sa Home Page*/
-#drinks-back{
-  background-color: #5CE1E6;
+#drinks-back {
+  background-color: #5ce1e6;
   color: white;
   font-size: 50px;
   padding: 5px 20px;
 }
 
-#drinks-back:hover, #drinks-back:active {
+#drinks-back:hover,
+#drinks-back:active {
   background-color: #53cacf;
 }
 
-.drinks-btn{
+.drinks-btn {
   font-size: 20px;
   padding: 25px 0;
   width: 130px;
