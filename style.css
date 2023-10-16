@@ -12,10 +12,6 @@ html {
   font-family: "Libre Baskerville", serif;
   scroll-behavior: smooth;
 }
-#logo img {
-  width: 100%;
-  border-top: 10px;
-}
 
 img {
   width: 100%;
@@ -24,27 +20,39 @@ img {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px;
+  justify-content: center;
+  padding: 20px;
   width: 100%;
   height: 70px;
   position: absolute;
   z-index: 1;
 }
 
-header .logo a {
-  font-size: 30px;
-  color: black;
-  padding: 15px 30px;
+.container {
+  display: flex;
+  top:-500px;
+  left: -100px;
+  align-items: center;
+  justify-content: center
 }
 
-header .logo a span {
-  color: rgb(28, 143, 250);
+.image {
+  flex-basis: 50%;
+}
+
+header .container .text a {
+  display: flex;
+  font-size: 20px;
+  color: black;
+  padding: 3px 5px;
+}
+
+header .container a span {
+  color: #ad6d2f;
 }
 
 header nav ul {
   display: flex;
-  padding: 10px 10px;
 }
 
 header nav ul li a {
@@ -53,20 +61,7 @@ header nav ul li a {
   padding: 10px 10px;
 }
 
-header nav ul li a:hover {
-  border-bottom: 2px solid white;
-}
-
-a,
-a:active,
-a:link,
-a:visited {
-  color: #222222;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-/* Navigation*/
+/*Header Navigation*/
 nav {
   margin: 0;
   display: flex;
@@ -87,7 +82,7 @@ nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: #e4bc84;
+  background: #37251b;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -124,16 +119,13 @@ nav ul li a:hover::after {
 .content h2 {
   font-size: 32px;
   padding: 5px;
-  color: black;
+  color: #37251b;
 }
 
 .content p {
   font-size: 22px;
-  color: white;
+  color: #80411e;
 }
-
-*Menu*/
-
 
 /*Menu*/
 
@@ -149,25 +141,28 @@ nav ul li a:hover::after {
   justify-content: space-between;
 }
 
-.menu-header h4 {
+.menu-header h3 {
   color: blue;
-  padding: 10px 20px;
+  padding: 10px 30px;
+}
+
+.menu-header h4{
+  color:blue;
+  padding:10px 20px;
 }
 
 .menu .menu-content {
   display: flex;
-  flex-direction: wrap;
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 0;
+  flex-wrap: wrap;
   background-color: bisque;
 }
 
-.menu .menu-content .hot-coffees,
-.frappe-coffees,
-.tea-coffees {
-  width: 250px;
-}
+.menu .menu-content .hot-coffees,.frappe-coffees,.tea-coffees{
+  width:250px;
+} 
 
 .menu .menu-content .hot-coffees .hot-coffees-image img {
   border-radius: 50%;
@@ -182,113 +177,82 @@ nav ul li a:hover::after {
 }
 
 .menu .menu-content .hot-coffees-body,
-.frappe-coffees-body,
-.tea-body {
+.frappe-coffees-body,.tea-body{
   text-align: center;
-  margin-top: 10px;
-}
-
-.menu .menu-content .coffee-drinks-description h2 {
-  color: blue;
+  margin-top: 25px;
 }
 
 .menu .menu-content .hot-coffees-body h2,
-.frappe-coffees-body h2,
-.tea-body h2 {
+.frappe-coffees-body h2,.tea-body h2{
   color: brown;
 }
 
-.menu
-  .menu-content
-  .coffee-drinks-description
-  label
-  .menu
-  .menu-content
-  .hot-coffees-body
-  label,
-.frappe-coffees-body label,
-.tea-body label {
+.menu .menu-content .hot-coffees-body label,
+.frappe-coffees-body label,.tea-body label{
   margin-top: 10px;
-  color: orange;
   color: #353535;
 }
 
 /*Drinks*/
 
-.drinks {
+.drinks{
   background-color: darkcyan;
-  width: 100%;
+  width:100%;
 }
 
-.drinks .drinks-header {
+.drinks .drinks-header{
+  display:flex;
+  padding:10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shop-header h3{
+  color:aquamarine;
+  padding:10px 30px;
+}
+
+.shop-header h4{
+  color:palevioletred;
+  padding:10px 20px;
+}
+
+.shop-box{
   display: flex;
-  padding: 10px;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.shop-heade h3 {
-  color: aquamarine;
-  padding: 10px 30px;
-}
-
-.shop-header h4 {
-  color: palevioletred;
-  padding: 10px 20px;
-}
-
-/*.section {*/
-.shop-box {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 50px;
   background-color: #e4bc84;
-  padding: 50px 0;
+  padding:50px 0;
+  flex-wrap: wrap;
 }
-.shop-box .card {
-  width: 280px;
-  margin: 20px;
+.shop-box .card{
+  width:280px;
+  margin: 20px; 
 }
 
-.section__pic-container {
-  display: flex;
-  margin: 50px;
-  gap: 5rem;
-}
-.shop-box .card-img {
+.shop-box .card-img{
   width: 100%;
-  height: 290px;
+  height: 270px;
   overflow: hidden;
 }
 
-.menu-pic {
-  width: 250px;
-  border-radius: 50%;
-}
-.shop-box .card-img img:hover {
+.shop-box .card-img img:hover{
   transform: scale(1.1);
-  transition: transform 0.5s ease-in-out;
+  transition: transform .6s ease-in-out;
 }
 
-/*Coffee*/
-.coffee-container {
-  text-align: center;
-}
-.shop-box .card-body {
+.shop-box .card-body{
   padding: 20px;
   color: white;
-  border: 3px solid black;
+  border:3px solid black;
 }
 
-.shop-box .card-body h3 {
+.shop-box .card-body h3{
   padding: 10px 0;
 }
 
-.coffee-container .row {
-  margin-bottom: 20px;
-}
-.shop-box .card-body i {
-  color: yellow;
+.shop-box .card-body i{
+  color:yellow;
   font-size: 10px;
   position: relative;
   bottom: 5px;
@@ -296,58 +260,54 @@ nav ul li a:hover::after {
 
 /*Cotacts*/
 
-.contact {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
   border-top: 2px solid black;
 }
 
-.contact .contact-box {
+.contact .contact-box{
   flex: 1;
 }
 
 .contact .contact-box .contact-image,
-.contact .contact-box .contact-body {
-  height: 100%;
+.contact .contact-box .contact-body{
+  height:100%;
 }
 
-.contact img {
+.contact img{
   width: 100%;
-  height: 100%;
+  height:100%;
 }
 
-.contact-image img {
-  opacity: 0.9;
+.contact-image img{
+  opacity:.9;
 }
 
-.contact-body {
+.contact-body{
   background-color: peru;
   height: 100%;
-  border-left: 2px solid black;
+  border-left:2px solid black;
 }
 
-.contact-body form {
-  padding: 50px 40px;
+.contact-body form{
+  padding:50px 40px;
   box-sizing: border-box;
 }
 
-.contact-body h2 {
-  color: plum;
+.contact-body h2{
+  color:plum;
   font-size: 20px;
 }
 
-/*Back Button Pang return sa Home Page*/
-#drinks-back {
-  background-color: #5ce1e6;
-}
-form .form-content {
-  position: relative;
+form .form-content{
+  position:relative;
   margin: 30px 0;
   border-bottom: 2px solid black;
 }
 
-form .form-content input {
+form .form-content input{
   width: 100%;
   height: 40px;
   padding: 0 5px;
@@ -356,63 +316,106 @@ form .form-content input {
   background: none;
   outline: 1ps solid black;
   color: white;
-  font-size: 50px;
-  padding: 5px 20px;
 }
 
-#drinks-back:hover,
-#drinks-back:active {
-  background-color: #53cacf;
-}
-
-form .form-content label {
+form .form-content label{
   position: Absolute;
   top: 50%;
   left: 5px;
   color: black;
   transform: translateY(-50%);
-  font-size: 15px;
-  transition: 0.6s;
+  font-size:15px;
+  transition: .6s;
   pointer-events: none;
 }
 
-.drinks-btn form .form-content span::before {
-  content: "";
+form .form-content span::before{
+  content:'';
   position: absolute;
-  top: 40px;
-  left: 0;
+  top:40px;
+  left:0;
   width: 0%;
-  height: 2px;
+  height:2px;
   background: midnightblue;
-  transform: 0.5s;
+  transform: .5s;
 }
 
-form .form-content input:focus ~ label,
-form .form-content input:valid ~ label {
-  top: -15px;
-  color: blueviolet;
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+  top:-15px;
+  color:blueviolet;
 }
 
-form .form-content input:focus ~ span:before,
-form .form-content input:valid ~ span:before {
+form .form-content input:focus~span:before,
+form .form-content input:valid~span:before{
   width: 100%;
 }
 
-.contact-body form button {
+.contact-body form button{
   padding: 10px 20px;
   font-size: 20px;
-  padding: 25px 0;
-  width: 130px;
   border: none;
   background-color: firebrick;
-  color: white;
+  color:white;
   border: 5px;
   cursor: pointer;
-  transition: all 0.5s ease-in;
+  transition: all .5s ease-in;
 }
 
-.contact-body form button:hover {
+.contact-body form button:hover{
   background-color: palevioletred;
+}
+
+/*About Us*/
+.about{
+  background-color: darkcyan;
+  width:100%;
+}
+
+.about .about-header{
+  display:flex;
+  padding:10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-header h3{
+  color:hotpink;
+  padding:10px 30px;
+}
+
+.about-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #e4bc84;
+  padding:50px 0;
+  flex-wrap: wrap;
+}
+.about-box .frame{
+  width:280px;
+  margin: 20px; 
+}
+
+.about-box .frame-image{
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+.about-box .frame-image img:hover{
+  transform: scale(1.1);
+  transition: transform .6s ease-in-out;
+}
+
+.about-box .about-body{
+  padding: 20px;
+  color: white;
+  border:3px solid black;
+}
+
+.about-box .about-body h3{
+  padding: 10px 0;
 }
 
 /*Footer*/
