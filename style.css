@@ -13,6 +13,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 img {
   width: 100%;
 }
@@ -28,13 +29,6 @@ header {
   z-index: 1;
 }
 
-/*(HINDI NA ATA NEED NITO?).logo-container {
-  display: flex;
-  top: -500px;
-  left: -100px;
-  align-items: center;
-  justify-content: center;
-}*/
 
 .logo-img {
   width: 12rem;
@@ -42,17 +36,7 @@ header {
   margin-left: 20%;
 }
 
-/*header .container .text a {
-  display: flex;
-  font-size: 20px;
-  color: black;
-  padding: 3px 5px;
-}
-
-header .container a span {
-  color: #ad6d2f;
-}*/
-
+/*Header */
 header nav ul {
   display: flex;
 }
@@ -62,21 +46,6 @@ header nav ul li a {
   font-size: 18px;
   padding: 10px 10px;
 }
-
-/*header nav ul li a:hover {
-  border-bottom: 2px solid white;
-}*/
-
-/*Header Navigation*/
-
-/*(HINDI NAG RE REFLECT SA WEB, SAANG PART TO?) nav {
-  margin: 0;
-  display: flex;
-  align-items: Center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-}*/
 
 nav ul li a {
   color: rgba(255, 255, 255, 0.8);
@@ -89,7 +58,7 @@ nav ul li a::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: #37251b;
+  background: #e4bc84;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -99,6 +68,7 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
+
 
 /* Content */
 
@@ -111,12 +81,8 @@ nav ul li a:hover::after {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(96, 76, 76, 0.6),
-      rgba(96, 76, 76, 0.6)
-    ),
-    url("https://pikwizard.com/pw/medium/33be3c6fa7f52ee4796cfd414a10744c.avif");
+  background-image: 
+    url("background\ home.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -124,14 +90,15 @@ nav ul li a:hover::after {
 }
 
 .content h2 {
-  font-size: 32px;
-  padding: 5px;
+  font-size: 50px;
+  padding: 10px;
   color: #37251b;
 }
 
 .content p {
-  font-size: 22px;
-  color: #80411e;
+  font-size: 30px;
+  padding:5px;
+  color:#6c522e;
 }
 
 /*Menu*/
@@ -439,5 +406,24 @@ form .form-content input:valid ~ span:before {
 .about-box .about-body h3 {
   padding: 10px 0;
 }
+
+.about-box.social{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding:20px 0;
+  flex-wrap: wrap;
+}
+
+.about-box .social img{
+  width:15%;
+  cursor:pointer;
+}
+
+.about-box .social img:hover{
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
 
 /*Footer*/
