@@ -13,7 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 img {
   width: 100%;
 }
@@ -28,7 +27,6 @@ header {
   position: absolute;
   z-index: 1;
 }
-
 
 .logo-img {
   width: 12rem;
@@ -69,7 +67,6 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-
 /* Content */
 
 .content {
@@ -81,7 +78,11 @@ nav ul li a:hover::after {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: 
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(96, 76, 76, 0.6),
+      rgba(96, 76, 76, 0.6)
+    ),
     url("background\ home.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -97,8 +98,8 @@ nav ul li a:hover::after {
 
 .content p {
   font-size: 30px;
-  padding:5px;
-  color:#6c522e;
+  padding: 5px;
+  color: #6c522e;
 }
 
 /*DRINKS*/
@@ -161,8 +162,8 @@ nav ul li a:hover::after {
 }
 .drinks .drinks-content .hot-coffees-body h2:hover,
 .frappe-coffees-body h2:hover,
-.tea-body h2:hover{
-  color:palegreen;
+.tea-body h2:hover {
+  color: palegreen;
 }
 
 .drinks .drinks-content .hot-coffees-body label,
@@ -237,7 +238,28 @@ nav ul li a:hover::after {
   bottom: 5px;
 }
 
-/*Cotacts*/
+/*Frappuccino*/
+.frappe-bg .frappe-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: auto;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(96, 76, 76, 0.5),
+      rgba(96, 76, 76, 0.6)
+    ),
+    url("./Assets/icing.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Contacts*/
 
 .contact {
   display: flex;
@@ -397,23 +419,22 @@ form .form-content input:valid ~ span:before {
   padding: 10px 0;
 }
 
-.about-box.social{
-  display:flex;
+.about-box.social {
+  display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding:20px 0;
+  padding: 20px 0;
   flex-wrap: wrap;
 }
 
-.about-box .social img{
-  width:15%;
-  cursor:pointer;
+.about-box .social img {
+  width: 15%;
+  cursor: pointer;
 }
 
-.about-box .social img:hover{
+.about-box .social img:hover {
   transform: scale(1.1);
   transition: transform 0.6s ease-in-out;
 }
-
 
 /*Footer*/
