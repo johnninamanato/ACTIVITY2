@@ -101,95 +101,85 @@ nav ul li a:hover::after {
   color:#6c522e;
 }
 
-/*Menu*/
+/*DRINKS*/
 
-.menu {
-  background-color: blanchedalmond;
+.drinks {
+  background-color: #37251b;
   width: 100%;
 }
 
-.menu .menu-header {
+.drinks .drinks-header {
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: space-between;
 }
 
-.menu-header h3 {
-  color: blue;
+.drinks-header h3 {
+  color: rosybrown;
   padding: 10px 30px;
 }
 
-.menu-header h4 {
-  color: blue;
-  padding: 10px 20px;
-}
-
-.menu .menu-content {
+.drinks .drinks-content {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 0;
   flex-wrap: wrap;
-  background-color: bisque;
+  background-color: #6c522e;
 }
 
-.menu .menu-content .hot-coffees,
+.drinks .drinks-content .hot-coffees,
 .frappe-coffees,
 .tea-coffees {
   width: 250px;
 }
 
-.menu .menu-content .hot-coffees .hot-coffees-image img {
+.drinks .drinks-content .hot-coffees .hot-coffees-image img {
   border-radius: 50%;
 }
 
-.menu .menu-content .frappe-coffees .frappe-coffees-image img {
+.drinks .drinks-content .frappe-coffees .frappe-coffees-image img {
   border-radius: 50%;
 }
 
-.menu .menu-content .tea-coffees .tea-image img {
+.drinks .drinks-content .tea-coffees .tea-image img {
   border-radius: 50%;
 }
 
-.menu .menu-content .hot-coffees-body,
+.drinks .drinks-content .hot-coffees-body,
 .frappe-coffees-body,
 .tea-body {
   text-align: center;
   margin-top: 25px;
 }
 
-.menu .menu-content .hot-coffees-body h2,
+.drinks .drinks-content .hot-coffees-body h2,
 .frappe-coffees-body h2,
 .tea-body h2 {
-  color: brown;
+  color: #37251b;
+}
+.drinks .drinks-content .hot-coffees-body h2:hover,
+.frappe-coffees-body h2:hover,
+.tea-body h2:hover{
+  color:palegreen;
 }
 
-.hot-coffees-body h2:hover {
-  color: black;
-}
-.frappe-coffees-body h2:hover {
-  color: black;
-}
-.tea-body h2:hover {
-  color: black;
-}
-
-.menu .menu-content .hot-coffees-body label,
+.drinks .drinks-content .hot-coffees-body label,
 .frappe-coffees-body label,
 .tea-body label {
   margin-top: 10px;
-  color: #353535;
+  color: white;
 }
 
-/*Drinks*/
+/*favorite*/
 
-.drinks {
+.favorite {
   background-color: darkcyan;
   width: 100%;
 }
 
-.drinks .drinks-header {
+.favorite .favorite-header {
   display: flex;
   padding: 10px;
   align-items: center;
