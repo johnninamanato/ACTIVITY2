@@ -28,7 +28,7 @@ header {
   z-index: 1;
   position: sticky;
   top: 0;
-  background-color: rgb(101, 56, 24);
+  background-color: #794022;
 }
 
 .logo-img {
@@ -96,20 +96,20 @@ nav ul li a:hover::after {
 .frappe-text h2 {
   font-size: 50px;
   padding: 10px;
-  color: #37251b;
+  color: #d99937;
 }
 
 .content p,
 .frappe-text label {
   font-size: 30px;
   padding: 5px;
-  color: #6c522e;
+  color: #0b0d0c;
 }
 
 /*DRINKS*/
 
 .drinks {
-  background-color: #37251b;
+  background-color: #c6a988;
   width: 100%;
 }
 
@@ -121,7 +121,7 @@ nav ul li a:hover::after {
 }
 
 .drinks-header h3 {
-  color: rosybrown;
+  color: black;
   padding: 10px 30px;
 }
 
@@ -180,7 +180,7 @@ nav ul li a:hover::after {
 /*favorite*/
 
 .favorite {
-  background-color: darkcyan;
+  background-color: #c6a988;
   width: 100%;
 }
 
@@ -205,7 +205,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #e4bc84;
+  background-color: #6c522e;
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -240,6 +240,26 @@ nav ul li a:hover::after {
   font-size: 10px;
   position: relative;
   bottom: 5px;
+}
+/*Coffees*/
+.coffee-bg .coffee-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: auto;
+  background-image: url("https://i.pinimg.com/564x/79/f3/d4/79f3d4e522788861b185a8c2dc39f64b.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.coffee-text {
+  color: #d99937;
+  font-size: 2rem;
 }
 
 /*Frappuccino*/
@@ -291,7 +311,7 @@ nav ul li a:hover::after {
 }
 
 .contact-body {
-  background-color: peru;
+  background-color: #deac76;
   height: 100%;
   border-left: 2px solid black;
 }
@@ -302,7 +322,7 @@ nav ul li a:hover::after {
 }
 
 .contact-body h2 {
-  color: plum;
+  color: #6b372b;
   font-size: 20px;
 }
 
@@ -368,12 +388,12 @@ form .form-content input:valid ~ span:before {
 }
 
 .contact-body form button:hover {
-  background-color: palevioletred;
+  background-color: #2c2221;
 }
 
 /*About Us*/
 .about {
-  background-color: darkcyan;
+  background-color: #b57537;
   width: 100%;
 }
 
@@ -382,17 +402,18 @@ form .form-content input:valid ~ span:before {
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+  padding: 50px;
 }
 
 .about-header h3 {
-  color: hotpink;
+  color: black;
   padding: 10px 30px;
 }
 
 .about-box {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #e4bc84;
   padding: 50px 0;
   flex-wrap: wrap;
@@ -400,12 +421,14 @@ form .form-content input:valid ~ span:before {
 .about-box .frame {
   width: 280px;
   margin: 20px;
+  border-radius: 25%;
 }
 
 .about-box .frame-image {
   width: 100%;
   height: 270px;
   overflow: hidden;
+  border-radius: 25%;
 }
 
 .about-box .frame-image img:hover {
@@ -444,7 +467,7 @@ form .form-content input:valid ~ span:before {
 /*Footer*/
 
 footer {
-  background-color: #404040;
+  background-color: #b57537;
   border-top: 2px solid #333333;
 }
 
