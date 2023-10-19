@@ -122,7 +122,7 @@ nav ul li a:hover::after {
 
 .drinks-header h3 {
   color: black;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 .drinks .drinks-content {
@@ -189,6 +189,10 @@ nav ul li a:hover::after {
   padding: 10px;
   align-items: center;
   justify-content: space-between;
+}
+.favorite-header h3 {
+  color: rgb(0, 0, 0);
+  padding: 10px 10px;
 }
 
 .shop-header h3 {
@@ -402,12 +406,12 @@ form .form-content input:valid ~ span:before {
   padding: 10px;
   align-items: center;
   justify-content: space-between;
-  padding: 50px;
+  padding: 30px;
 }
 
 .about-header h3 {
   color: black;
-  padding: 10px 30px;
+  padding: 10px 10px;
 }
 
 .about-box {
@@ -444,24 +448,6 @@ form .form-content input:valid ~ span:before {
 
 .about-box .about-body h3 {
   padding: 10px 0;
-}
-
-.about-box.social {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 20px 0;
-  flex-wrap: wrap;
-}
-
-.about-box .social img {
-  width: 15%;
-  cursor: pointer;
-}
-
-.about-box .social img:hover {
-  transform: scale(1.1);
-  transition: transform 0.6s ease-in-out;
 }
 
 /*Footer*/
