@@ -302,21 +302,28 @@ nav ul li a:hover::after {
   top: 0;
   background-color: #ff8f68;
 } 
-.tea-background .tea-logo-container{
+
+.image{
   display:flex;
-  justify-items: center;
-  align-items:center ;
+  align-items: center;
 }
+
 .tea-background .tea-logo-img {
   width: 10rem;
   margin-left: 20%;
-  margin-top: 70%;
 }
-.tea-background .tea-image{
+
+.tea-image{
   width: 5rem;
-  margin-left: 700%;
-  margin-bottom: 70%;
+  margin-left: 600%;
 }
+
+.tea-image:hover{
+  cursor:pointer;
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
 .tea-bg .tea-text {
   display: flex;
   flex-direction: column;
