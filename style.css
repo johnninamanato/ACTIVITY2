@@ -148,7 +148,7 @@ nav ul li a:hover::after {
   border-radius: 50%;
 }
 
-.drinks .drinks-content .tea-coffees .tea-image img {
+.drinks .drinks-content .tea-coffees .fruittea-image img {
   border-radius: 50%;
 }
 
@@ -241,6 +241,7 @@ nav ul li a:hover::after {
   position: relative;
   bottom: 5px;
 }
+
 /*Coffees*/
 .coffee-bg .coffee-text {
   display: flex;
@@ -281,6 +282,118 @@ nav ul li a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+/*Fruit Tea*/
+.tea-background{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  background-color: #ff8f68;
+} 
+.tea-background .tea-logo-container{
+  display:flex;
+  justify-items: center;
+  align-items:center ;
+}
+.tea-background .tea-logo-img {
+  width: 10rem;
+  margin-left: 20%;
+  margin-top: 70%;
+}
+.tea-background .tea-image{
+  width: 5rem;
+  margin-left: 700%;
+  margin-bottom: 70%;
+}
+.tea-bg .tea-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  width: auto;
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(96, 76, 76, 0.5),
+      rgba(96, 76, 76, 0.6)
+    ),
+    url("./Assets/fruitdrink.jpg");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tea-text h2{
+  color:#ff6a6a;
+  font-size: 80px;
+  padding:5px;
+}
+
+.tea-text label{
+  color:#ffd188;
+  font-size: 40px;
+  padding:2px;
+}
+
+.tea {
+  background-color: #d8bc41;
+  width: 100%;
+}
+
+.tea .tea-header {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tea-header h3 {
+  color:#ffd188;
+  padding: 10px 30px;
+}
+
+.tea-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #ff6a6a;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+.tea-box .card {
+  width: 280px;
+  margin: 20px;
+}
+
+.tea-box .card-img {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+.tea-box .card-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.tea-box .card-body {
+  padding: 20px;
+  color: white;
+  border: 3px solid #ffae32;
+}
+
+.tea-box .card-body h3 {
+  padding: 10px 0;
 }
 
 /*Contacts*/
