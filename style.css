@@ -33,7 +33,7 @@ header {
 
 .logo-img {
   width: 10rem;
-  margin-left: 20%;
+  margin: 0;
 }
 
 /*Header */
@@ -289,7 +289,7 @@ nav ul li a:hover::after {
 }
 
 /*Fruit Tea*/
-.tea-background{
+.tea-background {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -301,10 +301,10 @@ nav ul li a:hover::after {
   position: sticky;
   top: 0;
   background-color: #ff8f68;
-} 
+}
 
-.image{
-  display:flex;
+.image {
+  display: flex;
   align-items: center;
 }
 
@@ -313,13 +313,13 @@ nav ul li a:hover::after {
   margin-left: 20%;
 }
 
-.tea-image{
+.tea-image {
   width: 5rem;
   margin-left: 600%;
 }
 
-.tea-image:hover{
-  cursor:pointer;
+.tea-image:hover {
+  cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.6s ease-in-out;
 }
@@ -344,16 +344,16 @@ nav ul li a:hover::after {
   background-attachment: fixed;
 }
 
-.tea-text h2{
-  color:#ff6a6a;
+.tea-text h2 {
+  color: #ff6a6a;
   font-size: 80px;
-  padding:5px;
+  padding: 5px;
 }
 
-.tea-text label{
-  color:#ffd188;
+.tea-text label {
+  color: #ffd188;
   font-size: 40px;
-  padding:2px;
+  padding: 2px;
 }
 
 .tea {
@@ -369,7 +369,7 @@ nav ul li a:hover::after {
 }
 
 .tea-header h3 {
-  color:#ffd188;
+  color: #ffd188;
   padding: 10px 30px;
 }
 
