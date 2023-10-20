@@ -29,10 +29,29 @@
 
   .content h2 {
     font-size: 20px;
+    justify-content: center;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .home-content p {
+    font-size: 15px;
+    justify-content: center;
   }
 
   .content p {
     font-size: 10px;
+  }
+  .img .person-1 .person-2 .person-3 {
+    width: 25px;
+  }
+
+  .frame-body {
+    display: inline;
+    align-items: center;
+    margin: 2rem;
   }
 }
 
@@ -43,16 +62,19 @@
 }
 
 @media (max-width: 700px) {
+  .footer-box {
+    height: 10rem;
+  }
   .footer .footer-box .social-media a {
     color: white;
     background-color: #333333;
-    border-radius: 50px;
-    font-size: 15px;
-    padding: 5px;
+    font-size: 10px;
+    padding: 0px;
+    height: 100px;
   }
 
-  .footer .footer-box .label {
-    color: white;
-    font-size: 15px;
+  .footer .fpooter-box .social-media {
+    height: 20px;
+    width: 10px;
   }
 }
