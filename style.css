@@ -270,7 +270,7 @@ nav ul li a:hover::after {
 /*Frappuccino*/
 
 .frappe-container {
-  background-color: #5d12d2;
+  background-color: #3eb489;
   height: 109px;
 }
 
@@ -287,7 +287,7 @@ nav ul li a:hover::after {
       rgba(96, 76, 76, 0.5),
       rgba(96, 76, 76, 0.6)
     ),
-    url("./Assets/icing.jpg");
+    url("./Assets/header-frappe.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,7 +297,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #b0578d;
+  background-color: #483c32;
   padding: 50px 0;
   flex-wrap: wrap;
 }
