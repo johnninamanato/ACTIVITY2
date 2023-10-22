@@ -18,15 +18,6 @@
 
   <body>
     <header class="frappe-container">
-      <div class="logo-frappe-container">
-        <div class="image">
-          <img
-            src="../../Assets/logo.png"
-            class="logo-img"
-            alt="Johralyn Logo Image"
-          />
-        </div>
-      </div>
       <div id="frappe-nav">
         <nav>
           <ul>
@@ -37,6 +28,49 @@
             <li><a href="../../index.html#about">About Us</a></li>
           </ul>
         </nav>
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links">
+              <li>
+                <a href="../../index.html#home" onclick="toggleMenu()">Home</a>
+              </li>
+              <li>
+                <a href="../../index.html#drinks" onclick="toggleMenu()"
+                  >Drink List</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#favorite" onclick="toggleMenu()"
+                  >Favorite</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#contacts" onclick="toggleMenu()"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#about" onclick="toggleMenu()"
+                  >About Us</a
+                >
+              </li>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="logo-frappe-container">
+        <div class="image">
+          <img
+            src="../../Assets/logo.png"
+            class="logo-img"
+            alt="Johralyn Logo Image"
+          />
+        </div>
       </div>
     </header>
     <section>
@@ -104,5 +138,6 @@
         </div>
       </div>
     </section>
+    <script src="../../script.js"></script>
   </body>
 </html>

@@ -1,3 +1,10 @@
+function toggleMenu() {
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+  menu.classList.toggle("open");
+  icon.classList.toggle("open");
+}
+
 let slideIndex = 0;
 showSlides();
 
@@ -12,5 +19,5 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 4 seconds
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
 }

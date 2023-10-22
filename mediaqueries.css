@@ -1,31 +1,24 @@
 @media (max-width: 992px) {
-  /*header*/
-
-  header {
-    flex-direction: column;
-    height: 150px;
+  /* Header styles for smaller screens (tablet) */
+  nav ul {
+    display: none;
   }
 
-  .menu-header .logo a {
-    font-size: 25px;
+  #hamburger-nav {
+    display: block;
   }
+}
 
-  header .logo-img {
-    display: flex;
-    justify-content: center;
-  }
-
-  header nav ul li a {
+@media (max-width: 700px) {
+  /* Add styles for even smaller screens (phone) */
+  nav ul li a {
     font-size: 16px;
-    flex-direction: column;
-    display: inline-block;
-    margin-top: 10px;
+    margin: 5px;
   }
+}
 
-  header nav {
-    display: flex;
-    flex-direction: column;
-  }
+@media (max-width: 992px) {
+  /*header*/
 
   .content h2 {
     font-size: 20px;
