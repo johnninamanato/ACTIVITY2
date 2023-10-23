@@ -1,10 +1,18 @@
+// Hamburger nav
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+  const frappeMenu = document.querySelector(".menu-links-frappe");
+  if (menu) {
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  } else if (frappeMenu) {
+    frappeMenu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
 }
 
+//Home background
 let slideIndex = 0;
 showSlides();
 

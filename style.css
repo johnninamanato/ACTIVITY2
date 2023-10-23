@@ -45,7 +45,8 @@ nav ul {
 nav ul li a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  font-size: 20px;
+  margin: 5px 20px;
+  font-size: 18px;
   position: relative;
   padding: 10px 10px;
   transition: 0.5s;
@@ -103,7 +104,18 @@ nav ul li a:hover::after {
   transition: all 0.5s ease-in-out;
 }
 
-.menu-links a {
+.menu-links-frappe {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a,
+.menu-links-frappe a {
   display: block;
   padding: 10px;
   text-align: center;
@@ -114,7 +126,8 @@ nav ul li a:hover::after {
   background-color: #b3a492;
 }
 
-.menu-links li {
+.menu-links li,
+.menu-links-frappe li {
   list-style: none;
 }
 
@@ -133,7 +146,8 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-.menu-links.open {
+.menu-links.open,
+.menu-links-frappe.open {
   max-height: 300px;
 }
 
