@@ -2,6 +2,16 @@
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
+
+  const coffeeMenu = document.querySelector(".menu-links-coffee");
+  if (menu) {
+    menu.classList.toggle("open");
+    icon.classList.toggle("open");
+  } else if (coffeeMenu) {
+    coffeeMenu.classList.toggle("open");
+    icon.classList.toggle("open");
+  }
+
   const frappeMenu = document.querySelector(".menu-links-frappe");
   if (menu) {
     menu.classList.toggle("open");
