@@ -104,6 +104,76 @@ nav ul li a:hover::after {
   transition: all 0.5s ease-in-out;
 }
 
+.menu-links li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #e4bc84;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links li a:hover::after {
+  width: 100%;
+}
+
+.menu-links.open,
+.menu-links-frappe.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+  opacity: 1;
+  transform: none;
+}
+
+.menu-links-coffee {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a,
+.menu-links-coffee a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #0b0d0c;
+  font-size: 20px;
+  position: relative;
+  background-color: #b3a492;
+}
+
+.menu-links li,
+.menu-links-coffee li {
+  list-style: none;
+}
+
+.menu-links.open,
+.menu-links-coffee.open {
+  max-height: 300px;
+}
+
 .menu-links-frappe {
   position: absolute;
   top: 100%;
@@ -246,7 +316,8 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
 }
 
 .drinks-header h3 {
@@ -336,7 +407,8 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
 }
 .favorite-header h3 {
   color: rgb(0, 0, 0);
@@ -426,8 +498,14 @@ nav ul li a:hover::after {
   border: 3px solid black;
 }
 
+.shop-box .card-body h2 {
+  font-size: 20px;
+  padding: 10px;
+  color: #b57537;
+}
+
 .shop-box .card-body h3 {
-  font-size: 1rem;
+  font-size: 16px;
   padding: 10px 0;
 }
 
@@ -709,7 +787,8 @@ form .form-content input:valid ~ span:before {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
   padding: 30px;
 }
 
