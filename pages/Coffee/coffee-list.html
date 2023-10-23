@@ -16,6 +16,7 @@
 
     <title>JOHRALYN Coffee Bar</title>
   </head>
+
   <body>
     <header>
       <div id="coffee-nav">
@@ -28,8 +29,43 @@
             <li><a href="../../index.html#about">About Us</a></li>
           </ul>
         </nav>
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="menu-links">
+                <li>
+                  <a href="../../index.html#home" onclick="toggleMenu()"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../../index.html#drinks" onclick="toggleMenu()"
+                    >Drinks List</a
+                  >
+                </li>
+                <li>
+                  <a href="../../index.html#favorite" onclick="toggleMenu()"
+                    >Favorite</a
+                  >
+                </li>
+                <li>
+                  <a href="../../index.html#contacts" onclick="toggleMenu()"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="../../index.html#about" onclick="toggleMenu()"
+                    >About Us</a
+                  >
+                </li>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-
       <div class="logo-container">
         <div class="image">
           <img
@@ -44,15 +80,17 @@
       <div class="coffee-bg">
         <div class="coffee-text">
           <h2>Coffees</h2>
-          <label
-            >Coffee gives me a sense of peacfulness. A cup of coffee always
-            saves the day.
-          </label>
+          <div class="card-body">
+            <label
+              >A day cannot go by without a dose of strong and bold
+              coffee</label
+            >
+          </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="shop-box">
+      <div class="coffee-drinks-box">
         <div class="item-2">
           <div class="card">
             <div class="card-img">
