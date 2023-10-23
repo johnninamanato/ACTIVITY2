@@ -97,23 +97,40 @@ nav ul li a:hover::after {
   position: absolute;
   top: 100%;
   right: 0;
-  width: fit-content;
+  width: 180px;
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3 ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .menu-links a {
-  display: block;
-  padding: 10px;
+  display:block;
+  padding:10px;
   text-align: center;
-  color: black;
   text-decoration: none;
+  color:#0b0d0c;
+  font-size: 20px;
+  position: relative;
   background-color: #b3a492;
 }
 
 .menu-links li {
   list-style: none;
+}
+
+.menu-links li a::after{
+  content:'';
+  width: 0%;
+  height: 4px;
+  background:#e4bc84;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links li a:hover::after{
+  width:100%;
 }
 
 .menu-links.open {
@@ -138,7 +155,7 @@ nav ul li a:hover::after {
   transform: none;
 }
 
-/* Content */
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -176,6 +193,8 @@ nav ul li a:hover::after {
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+
 
 /* Fading animation */
 .fade {
@@ -339,8 +358,50 @@ nav ul li a:hover::after {
 
 .shop-box .card-img {
   width: 100%;
-  height: 270px;
+  height: 260px;
   overflow: hidden;
+}
+
+.card-img {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 4px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  position: relative;
+}
+
+.card-img h2,
+.card-img label {
+  position: absolute;
+  color: #fff;
+  padding: 8px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding-top: 35%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.card-img.show h2 {
+  opacity: 1;
+  padding-bottom: 100%;
+  visibility: visible;
+}
+
+.card-img.show label {
+  opacity: 1;
+  padding-top: 40%;
+  visibility: visible;
 }
 
 .shop-box .card-img img:hover {
@@ -486,124 +547,39 @@ nav ul li a:hover::after {
   padding: 10px 0;
 }
 
-/*Fruit Tea*/
-.tea-background {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px;
-  width: 100%;
-  height: 110px;
-  position: absolute;
-  z-index: 1;
-  position: sticky;
-  top: 0;
-  background-color: #ff8f68;
+/*Fruit Tea
+.slider{
+  position:relative;
+  width:100%;
+  height:370px;
+  overflow:hidden;
 }
 
-.image {
-  display: flex;
-  align-items: center;
-}
-
-.tea-background .tea-logo-img {
-  width: 10rem;
-  margin-left: 20%;
-}
-
-.tea-image {
-  width: 5rem;
-  margin-left: 600%;
-}
-
-.tea-image:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: transform 0.6s ease-in-out;
-}
-
-.tea-bg .tea-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  min-height: 100vh;
-  width: auto;
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(96, 76, 76, 0.5),
-      rgba(96, 76, 76, 0.6)
-    ),
-    url("./Assets/fruitdrink.jpg");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.tea-text h2 {
-  color: #ff6a6a;
-  font-size: 80px;
-  padding: 5px;
-}
-
-.tea-text label {
-  color: #ffd188;
-  font-size: 40px;
-  padding: 2px;
-}
-
-.tea {
-  background-color: #d8bc41;
-  width: 100%;
-}
-
-.tea .tea-header {
-  display: flex;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.tea-header h3 {
-  color: #ffd188;
-  padding: 10px 30px;
-}
-
-.tea-box {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: #ff6a6a;
-  padding: 50px 0;
-  flex-wrap: wrap;
-}
-.tea-box .card {
-  width: 280px;
-  margin: 20px;
-}
-
-.tea-box .card-img {
-  width: 100%;
-  height: 270px;
-  overflow: hidden;
-}
-
-.tea-box .card-img img:hover {
-  transform: scale(1.1);
-  transition: transform 0.6s ease-in-out;
-}
-
-.tea-box .card-body {
+.item{
+  position:absolute;
+  width:200px;
+  height: 320px;
+  text-align: justify;
+  background-color: #37251b;
+  border-radius: 10px;
   padding: 20px;
-  color: white;
-  border: 3px solid #ffae32;
+  transition: 0.5s;
+  left:calc(50%-110px);
+  top: 0;
 }
-
-.tea-box .card-body h3 {
-  padding: 10px 0;
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color:#6c522e;
+  background-color: transparent;
+  border: none;
+  font-size:xx-large;
+  left:50px;
 }
+#next{
+  left:unset;
+  right: 50px;
+}*/
 
 /*Contacts*/
 
