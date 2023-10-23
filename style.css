@@ -246,7 +246,8 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
 }
 
 .drinks-header h3 {
@@ -336,7 +337,8 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
 }
 .favorite-header h3 {
   color: rgb(0, 0, 0);
@@ -426,8 +428,14 @@ nav ul li a:hover::after {
   border: 3px solid black;
 }
 
+.shop-box .card-body h2 {
+  font-size: 20px;
+  padding: 10px;
+  color: #b57537;
+}
+
 .shop-box .card-body h3 {
-  font-size: 1rem;
+  font-size: 16px;
   padding: 10px 0;
 }
 
@@ -709,7 +717,8 @@ form .form-content input:valid ~ span:before {
   display: flex;
   padding: 10px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: large;
   padding: 30px;
 }
 
