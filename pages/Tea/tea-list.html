@@ -1,156 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter&family=Orbitron:wght@600&family=Unbounded:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="../../style.css" />
-        <link rel="stylesheet" href="../../mediaqueries.css">
-        <title>JOHRALYN Coffee Bar</title>
-    </head>
-    <body>
-      <div class="tea-background">
-        <div class="tea-logo-container">
-          <div class="image">
-            <img
-              src="../../Assets/logo.png"
-              class="tea-logo-img"
-              alt="Johralyn Logo Image"
-            />
-            <img src="../../Assets/bckbtnnange.png" 
-            class="tea-image" >
-            <a href="../../index.html"></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>JOHRALYN Coffe Bar</title>
+  </head>
+
+  <body>
+    <header class="tea-container">
+      <div id="tea-nav">
+        <nav>
+          <ul>
+            <li><a href="../../index.html#home">Home</a></li>
+            <li><a href="../../index.html#drinks">Drinks List</a></li>
+            <li><a href="../../index.html#favorite">Favorite</a></li>
+            <li><a href="../../index.html#contacts">Contact Us</a></li>
+            <li><a href="../../index.html#about">About Us</a></li>
+          </ul>
+        </nav>
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu">
+            <div class="hamburger-icon-tea" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="menu-links-tea">
+              <li>
+                <a href="../../index.html#home" onclick="toggleMenu()">Home</a>
+              </li>
+              <li>
+                <a href="../../index.html#drinks" onclick="toggleMenu()"
+                  >Drink List</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#favorite" onclick="toggleMenu()"
+                  >Favorite</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#contacts" onclick="toggleMenu()"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="../../index.html#about" onclick="toggleMenu()"
+                  >About Us</a
+                >
+              </li>
+            </div>
           </div>
+        </nav>
+      </div>
+      <div class="logo-tea-container">
+        <div class="image">
+          <img
+            src="../../Assets/logo.png"
+            class="logo-img"
+            alt="Johralyn Logo Image"
+          />
         </div>
       </div>
+    </header>
 
-        <section>
-          <div class="tea-bg">
-            <div class="tea-text">
-              <h2>Fruit Tea</h2>
-              <label
-                >I feel refreshed and invigorated when I drink fruit tea, <br>
-                with its delightful blend of flavors and soothing warmth.
-              </label>
+    <section>
+      <div class="tea-bg">
+        <div class="tea-text">
+          <h2>Fruit Tea</h2>
+          <label>Fruit tea is an infusion made from cut pieces of fruit and plants.</label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="tea-drinks-box">
+        <div class="item-1">
+          <div class="card">
+            <div class="card-img">
+              <img src="../../Assets/strawberry(fruit tea).jpg" alt="Strawberry Fruit Tea" />
+            </div>
+            <div class="card-body">
+              <h3>Strawberry Fruit Tea</h3>
+              <label>Fruity sweet and mildly sour taste.</label>
             </div>
           </div>
-        </section>
-          
+        </div>
 
-          <div class="tea">
-            <div class="tea-header">
-              <h3>ANGELYN'S FRUIT TEA COLLECTION</h3>
+        <div class="item-2">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="../../Assets/ITEA_IcedGreenTeaLatte.jpg"
+                alt="Iced Green Tea Latte"
+              />
             </div>
-            <div class="tea-box">
-              <div class="item-1">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="../../Assets/strawberry(fruit tea).jpg"  />
-                  </div>
-                  <div class="card-body">
-                    <h3>STRAWBERRY</h3>
-                    <label>Description </label>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="item-2">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/ITEA_IcedShakenTeas.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED SHAKEN TEA</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="item-3">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/ITEA_IcedShakenHibiscusTeawithPomegranatePearls.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>HIBISCUS TEA WITH POMEGRANATE PEARLS</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item-4">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/Iced-Vanilla.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED VANILLA</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item-5">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/IcedBlackTeaLatte.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED BLACK TEA LATTE</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item-6">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/IcedChaiTeaLatte.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED CHAI TEA LATTE</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item-7">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/ITEA_IcedGreenTeaLatte.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED GREEN TEA LATTE</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="item-8">
-                <div class="card">
-                  <div class="card-img">
-                    <img
-                      src="../../Assets/ITEA_IcedMatchaandEspressoFusion.jpg"/>
-                  </div>
-                  <div class="card-body">
-                    <h3>ICED MATCHA & ESPRESSO FUSION</h3>
-                    <label>Description</label>
-                  </div>
-                </div>
-              </div>
-
-
+            <div class="card-body">
+              <h3>Iced Green Tea Latte</h3>
+              <label>Smooth and creamy matcha sweetened just right and served with milk over ice.</label>
             </div>
           </div>
-    </body>
+        </div>
+
+        <div class="item-3">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="../../Assets/ITEA_IcedMatchaandEspressoFusion.jpg"
+                alt="Iced Matcha & Espresso Fussion"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Iced Matcha & Espresso Fusion</h3>
+              <label> Layered drink of matcha green tea and espresso with milk.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-2">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="../../Assets/ITEA_IcedShakenHibiscusTeawithPomegranatePearls.jpg"
+                alt="Hibiscus Tea w/ Pomegranate Pearls"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Hibiscus Tea w/ Pomegranate Pearls</h3>
+              <label>Hibiscus Tea mixed with Pomergranate pearls and lemonade shaken with ice.</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="item-5">
+          <div class="card">
+            <div class="card-img">
+              <img
+                src="../../Assets/ITEA_IcedShakenTeas.jpg"
+                alt="Teavana Shaken Ice"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Teavana Shaken Ice</h3>
+              <label>Green tea is blended with mint, lemongrass and lemon verbena, then lightly sweetened and given a good shake. Light and oh-so-refreshing.</label>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>
