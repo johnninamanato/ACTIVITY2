@@ -1,3 +1,16 @@
+//Loader
+// Wait for the page to load
+document.addEventListener("DOMContentLoaded", function () {
+  // Set a timeout to hide the loader and redirect after 3 seconds
+  setTimeout(function () {
+    const loader = document.querySelector(".loader-container");
+    loader.style.display = "none";
+
+    // Redirect to the main site
+    window.location.href = "index.html";
+  }, 3000); // 3000 milliseconds = 3 seconds
+});
+
 // Hamburger nav
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
