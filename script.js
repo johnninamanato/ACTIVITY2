@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Redirect to the main site
     window.location.href = "index.html";
-  }, 3000); // 3000 milliseconds = 3 seconds
+  }, 2000); // 3000 milliseconds = 3 seconds
 });
 
 // Hamburger nav
@@ -69,4 +69,3 @@ for (var i = 0; i < textOverImages.length; i++) {
     }
   };
 }
-
