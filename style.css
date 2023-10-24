@@ -39,6 +39,19 @@ header {
 /*Header */
 header nav ul {
   display: flex;
+<<<<<<< Updated upstream
+=======
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  width: 100%;
+  height: 110px;
+  position: absolute;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  background-color: #a17a69;
+>>>>>>> Stashed changes
 }
 
 header nav ul li a {
@@ -48,10 +61,15 @@ header nav ul li a {
 }
 
 nav ul li a {
-  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 20px;
   position: relative;
+<<<<<<< Updated upstream
+=======
+  padding: 10px 10px;
+  transition: 0.5s;
+  color: black;
+>>>>>>> Stashed changes
 }
 
 nav ul li a::after {
@@ -69,7 +87,261 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
 /* Content */
+=======
+/* Hamburger Menu*/
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 180px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-links li {
+  background-color: #917054;
+  text-align: center;
+  position: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.menu-links a {
+  color: black;
+}
+
+.menu-links,
+.menu-links.open {
+  position: absolute;
+}
+
+.menu-links li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #e4bc84;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links li a:hover::after {
+  width: 100%;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+  opacity: 1;
+  transform: none;
+}
+
+/*Frappe Page-- menu links*/
+
+.menu-links.open,
+.menu-links-frappe.open {
+  max-height: 300px;
+}
+
+.menu-links-frappe {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links-frappe li {
+  background-color: #917054;
+  text-align: center;
+  position: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.menu-links-frappe a {
+  color: black;
+}
+
+.menu-links,
+.menu-links-frappe.open {
+  position: absolute;
+}
+
+.menu-links-frappe li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #e4bc84;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links-frappe li a:hover::after {
+  width: 100%;
+}
+
+/*Coffee Page-- Menu links*/
+
+.menu-links.open,
+.menu-links-coffee.open {
+  max-height: 300px;
+}
+
+.menu-links-coffee {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links-coffee li {
+  background-color: #917054;
+  text-align: center;
+  position: center;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.menu-links-coffee a {
+  color: black;
+}
+
+.menu-links,
+.menu-links-coffee.open {
+  position: absolute;
+}
+
+.menu-links-coffee li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #e4bc84;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links-coffee li a:hover::after {
+  width: 100%;
+}
+/*Tea Page-- Menu links*/
+
+.menu-links.open,
+.menu-links-tea.open {
+  max-height: 300px;
+}
+
+.menu-links-tea {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links-tea a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #ec5d57;
+  font-size: 20px;
+  position: relative;
+  background-color: #ecce24;
+}
+
+.menu-links-tea li {
+  list-style: none;
+}
+
+.menu-links-tea li a::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background: #f8d496;
+  position: absolute;
+  left: -0;
+  bottom: -1px;
+  transition: 0.5s;
+}
+
+.menu-links-tea li a:hover::after {
+  width: 100%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 86vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none; /* Hide slides by default */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+>>>>>>> Stashed changes
 
 .content {
   display: flex;
@@ -109,7 +381,7 @@ nav ul li a:hover::after {
 /*DRINKS*/
 
 .drinks {
-  background-color: #c6a988;
+  background-color: #b57537;
   width: 100%;
 }
 
@@ -117,7 +389,12 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
+<<<<<<< Updated upstream
   justify-content: space-between;
+=======
+  justify-content: center;
+  font-size: large;
+>>>>>>> Stashed changes
 }
 
 .drinks-header h3 {
@@ -130,8 +407,7 @@ nav ul li a:hover::after {
   align-items: center;
   justify-content: space-evenly;
   padding: 50px 0;
-  flex-wrap: wrap;
-  background-color: #6c522e;
+  background-color: #cfb595;
 }
 
 .drinks .drinks-content .hot-coffees,
@@ -164,10 +440,15 @@ nav ul li a:hover::after {
 .tea-body h2 {
   color: #37251b;
 }
+
 .drinks .drinks-content .hot-coffees-body h2:hover,
 .frappe-coffees-body h2:hover,
 .tea-body h2:hover {
+<<<<<<< Updated upstream
   color: palegreen;
+=======
+  color: #410200;
+>>>>>>> Stashed changes
 }
 
 .drinks .drinks-content .hot-coffees-body label,
@@ -180,7 +461,7 @@ nav ul li a:hover::after {
 /*favorite*/
 
 .favorite {
-  background-color: #c6a988;
+  background-color: #b57537;
   width: 100%;
 }
 
@@ -188,14 +469,19 @@ nav ul li a:hover::after {
   display: flex;
   padding: 10px;
   align-items: center;
+<<<<<<< Updated upstream
   justify-content: space-between;
+=======
+  justify-content: center;
+  font-size: large;
+>>>>>>> Stashed changes
 }
 .favorite-header h3 {
   color: rgb(0, 0, 0);
   padding: 10px 10px;
 }
 
-.shop-header h3 {
+/*.shop-header h3 {
   color: aquamarine;
   padding: 10px 30px;
 }
@@ -203,13 +489,13 @@ nav ul li a:hover::after {
 .shop-header h4 {
   color: palevioletred;
   padding: 10px 20px;
-}
+}*/
 
 .shop-box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #6c522e;
+  background-color: #cfb595;
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -232,9 +518,19 @@ nav ul li a:hover::after {
 .shop-box .card-body {
   padding: 20px;
   color: white;
-  border: 3px solid black;
+  border-radius: 20px;
+  background-color: #c19a6b;
 }
 
+<<<<<<< Updated upstream
+=======
+.shop-box .card-body h2 {
+  font-size: 20px;
+  padding: 10px;
+  color: #4a2c2a;
+}
+
+>>>>>>> Stashed changes
 .shop-box .card-body h3 {
   padding: 10px 0;
 }
@@ -262,12 +558,81 @@ nav ul li a:hover::after {
   background-attachment: fixed;
 }
 
+<<<<<<< Updated upstream
 .coffee-text {
   color: #d99937;
   font-size: 2rem;
 }
 
 /*Frappuccino*/
+=======
+.coffee-text h2 {
+  color: #4b3832;
+  font-size: 5rem;
+}
+
+.coffee-text label {
+  padding: 5px;
+  font-size: 2rem;
+  color: #a67b5b;
+}
+.coffee-drinks-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f1e9d2;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.coffee-drinks-box .card {
+  width: 280px;
+  margin: 20px;
+}
+
+.coffee-drinks-box .card-img {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+.coffee-drinks-box .card-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.coffee-drinks-box .card-body {
+  margin-top: 10px;
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: #917054;
+}
+
+.coffee-drinks-box .card-body h3 {
+  padding: 10px 0;
+  color: #f7ae62;
+}
+
+/*Frappuccino*/
+
+.frappe-container {
+  background-color: #a17a69;
+  height: 109px;
+}
+
+.frappe-text h2 {
+  color: #4b3832;
+  font-size: 5rem;
+}
+
+.frappe-text label {
+  padding: 5px;
+  font-size: 2rem;
+  color: #a67b5b;
+}
+
+>>>>>>> Stashed changes
 .frappe-bg .frappe-text {
   display: flex;
   flex-direction: column;
@@ -287,6 +652,7 @@ nav ul li a:hover::after {
   background-size: cover;
   background-attachment: fixed;
 }
+<<<<<<< Updated upstream
 
 /*Fruit Tea*/
 .tea-background {
@@ -322,6 +688,49 @@ nav ul li a:hover::after {
   cursor: pointer;
   transform: scale(1.1);
   transition: transform 0.6s ease-in-out;
+=======
+.frappe-drinks-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f1e9d2;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.frappe-drinks-box .card {
+  width: 280px;
+  margin: 20px;
+}
+
+.frappe-drinks-box .card-img {
+  width: 100%;
+  height: 270px;
+  overflow: hidden;
+}
+
+.frappe-drinks-box .card-img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.6s ease-in-out;
+}
+
+.frappe-drinks-box .card-body {
+  padding: 20px;
+  color: white;
+  border-radius: 20px;
+  background-color: #917054;
+}
+
+.frappe-drinks-box .card-body h3 {
+  padding: 10px 0;
+  color: #f7ae62;
+}
+
+/*Fruit Tea*/
+.tea-container {
+  background-color: #a17a69;
+  height: 109px;
+>>>>>>> Stashed changes
 }
 
 .tea-bg .tea-text {
@@ -345,6 +754,7 @@ nav ul li a:hover::after {
 }
 
 .tea-text h2 {
+<<<<<<< Updated upstream
   color: #ff6a6a;
   font-size: 80px;
   padding: 5px;
@@ -354,6 +764,16 @@ nav ul li a:hover::after {
   color: #ffd188;
   font-size: 40px;
   padding: 2px;
+=======
+  color: #4b3832;
+  font-size: 5rem;
+}
+
+.tea-text label {
+  padding: 5px;
+  font-size: 2rem;
+  color: #a67b5b;
+>>>>>>> Stashed changes
 }
 
 .tea {
@@ -375,9 +795,12 @@ nav ul li a:hover::after {
 
 .tea-box {
   display: flex;
-  align-items: center;
   justify-content: space-evenly;
+<<<<<<< Updated upstream
   background-color: #ff6a6a;
+=======
+  background-color: #f1e9d2;
+>>>>>>> Stashed changes
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -399,12 +822,26 @@ nav ul li a:hover::after {
 
 .tea-box .card-body {
   padding: 20px;
+  border-radius: 20px;
+  background-color: #917054;
+}
+
+.tea-drinks-box label {
   color: white;
+<<<<<<< Updated upstream
   border: 3px solid #ffae32;
 }
 
 .tea-box .card-body h3 {
   padding: 10px 0;
+=======
+  font-size: 1rem;
+}
+
+.tea-drinks-box .card-body h3 {
+  padding: 5px 0;
+  color: #f7ae62;
+>>>>>>> Stashed changes
 }
 
 /*Contacts*/
@@ -437,7 +874,6 @@ nav ul li a:hover::after {
 .contact-body {
   background-color: #deac76;
   height: 100%;
-  border-left: 2px solid black;
 }
 
 .contact-body form {
@@ -463,7 +899,6 @@ form .form-content input {
   font-size: 18px;
   border: none;
   background: none;
-  outline: 1ps solid black;
   color: white;
 }
 
@@ -537,7 +972,7 @@ form .form-content input:valid ~ span:before {
 .about-box {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #e4bc84;
   padding: 50px 0;
   flex-wrap: wrap;
@@ -546,6 +981,17 @@ form .form-content input:valid ~ span:before {
   width: 280px;
   margin: 20px;
   border-radius: 25%;
+<<<<<<< Updated upstream
+=======
+  position: relative;
+  display: block;
+}
+
+.about-box .frame:hover .frame-body label {
+  display: block;
+  opacity: 1;
+  transform: translateY(-20px);
+>>>>>>> Stashed changes
 }
 
 .about-box .frame-image {
@@ -573,8 +1019,7 @@ form .form-content input:valid ~ span:before {
 /*Footer*/
 
 footer {
-  background-color: #b57537;
-  border-top: 2px solid #333333;
+  background-color: #7f6244;
 }
 
 footer .footer-box {
@@ -586,11 +1031,13 @@ footer .footer-box {
 
 footer .footer-box .social-media a {
   color: white;
-  background-color: #333333;
+  background-color: #c98860;
   border-radius: 50%;
-  font-size: 17px;
+  font-size: large;
   padding: 10px;
   margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 footer .footer-box .social-media a:hover {
@@ -601,6 +1048,7 @@ footer .footer-box .social-media a:hover {
 footer .footer-box .copyright {
   color: white;
   font-size: 20px;
+  padding: 10px;
 }
 
 footer .footer-box .brand {
@@ -609,5 +1057,5 @@ footer .footer-box .brand {
 }
 
 footer .footer-box .brand span {
-  color: orange;
+  color: #b38b6d;
 }
