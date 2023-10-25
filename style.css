@@ -608,12 +608,12 @@ nav ul li a:hover::after {
 }
 
 .shop-header h3 {
-  color: aquamarine;
+  background-color: #794022;
   padding: 10px 30px;
 }
 
 .shop-header h4 {
-  color: palevioletred;
+  background-color: #794022;
   padding: 10px 20px;
 }
 
@@ -621,7 +621,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #6c522e;
+  background-color: #698860;
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -687,7 +687,10 @@ nav ul li a:hover::after {
   margin-top: 10px;
   padding: 20px;
   color: white;
-  border: 3px solid black;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #c6a988;
 }
 
 .shop-box .card-body h2 {
@@ -697,8 +700,9 @@ nav ul li a:hover::after {
 }
 
 .shop-box .card-body h3 {
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px 0;
+  color: #4b1f0e;
 }
 
 .shop-box .card-body i {
@@ -724,9 +728,14 @@ nav ul li a:hover::after {
   background-attachment: fixed;
 }
 
-.coffee-text {
+.coffee-text h2 {
   color: #d99937;
   font-size: 1.5rem;
+}
+
+.coffee-text label {
+  color: #4b1f0e;
+  font-size: 1rem;
 }
 
 .coffee-drinks-box {
@@ -769,7 +778,7 @@ nav ul li a:hover::after {
 /*Frappuccino*/
 
 .frappe-container {
-  background-color: #3eb489;
+  background-color: #794022;
   height: 109px;
 }
 
@@ -796,7 +805,7 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #483c32;
+  background-color: #698860;
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -820,16 +829,27 @@ nav ul li a:hover::after {
 .frappe-drinks-box .card-body {
   padding: 20px;
   color: white;
-  border: 3px solid black;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #c6a988;
+}
+
+.frappe-drinks-box .card-body h2 {
+  font-size: 16px;
+  padding: 10px;
+  color: #b57537;
 }
 
 .frappe-drinks-box .card-body h3 {
+  font-size: 18px;
   padding: 10px 0;
+  color: #4b1f0e;
 }
 
 /*Fruit Tea*/
 .tea-container {
-  background-color: #ec5d57;
+  background-color: #794022;
   height: 109px;
 }
 
@@ -854,19 +874,19 @@ nav ul li a:hover::after {
 }
 
 .tea-text h2 {
-  color: #dfe656;
-  font-size: 200px;
+  color: #ff8f84;
+  font-size: 25px;
 }
 
 .tea-text label {
-  font-size: 50px;
-  color: #fdf29c;
+  font-size: 20px;
+  color: #e28e77;
 }
 .tea-drinks-box {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #f9928e;
+  background-color: #698860;
   padding: 50px 0;
   flex-wrap: wrap;
 }
@@ -890,11 +910,25 @@ nav ul li a:hover::after {
 .tea-drinks-box .card-body {
   padding: 20px;
   color: white;
-  border: 3px solid black;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  background-color: #c6a988;
+  height: 12rem;
+}
+
+.tea-drinks-box .card-body label {
+  font-size: 16px;
+  padding: 10px;
+  color: white;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .tea-drinks-box .card-body h3 {
+  font-size: 16px;
   padding: 10px 0;
+  color: #4b1f0e;
 }
 
 /*Contacts*/
