@@ -508,28 +508,36 @@ nav ul li a:hover::after {
 
 .slideshow-container .mySlides .content h2 {
   font-size: 7rem;
-  display:grid;
-  color: #ff7b00;
+  display: grid;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 3px 8px 10px black;
   font-family: "Lilita One", sans-serif;
- animation: typing 2s steps(22), blink .5s step-end infinite;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  50% { border-color: transparent }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .slideshow-container .mySlides .content h3 {
   font-size: 3rem;
-  color: #ff7b00;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 3px 8px 10px black;
   font-family: "Lilita One", sans-serif;
   margin-bottom: 20px;
 }
@@ -1242,7 +1250,7 @@ footer .footer-box .social-media a {
   background-color: #ffb76b;
   border-radius: 50%;
   font-size: 20px;
-  margin-bottom: 5px;;
+  margin-bottom: 5px;
   padding: 20px;
   display: flex;
   flex: wrap;
