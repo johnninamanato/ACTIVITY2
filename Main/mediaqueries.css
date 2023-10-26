@@ -59,6 +59,11 @@
     color: white;
     font-size: 15px;
   }
+
+  .footer .footer-box .social-media-label h2 {
+    display: flex;
+    margin-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
