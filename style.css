@@ -524,20 +524,20 @@ nav ul li a:hover::after {
 }
 
 .slideshow-container .mySlides .content h2 {
-  font-size: 5rem;
+  font-size: 7rem;
   color: #ff7b00;
   font-family: "Lilita One", sans-serif;
 }
 
 .slideshow-container .mySlides .content h3 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #ff7b00;
   font-family: "Lilita One", sans-serif;
   margin-bottom: 20px;
 }
 
 .slideshow-container .mySlides .content p {
-  font-size: 1rem;
+  font-size: 2rem;
   color: #10091d;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -1214,20 +1214,20 @@ footer .footer-box {
 footer .footer-box h2 {
   color: orange;
   font-size: 16px;
-  display: flex;
-  flex: wrap;
   justify-content: center;
   text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
 
 footer .footer-box .social-media a {
   color: white;
   background-color: #ffb76b;
   border-radius: 50%;
-  font-size: 17px;
+  font-size: 20px;
   padding: 10px;
-  margin: 5px;
   display: flex;
+  flex: wrap;
 }
 
 footer .footer-box .social-media a:hover {
