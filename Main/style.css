@@ -967,15 +967,15 @@ nav ul li a:hover::after {
 }
 
 .tea-text h2 {
-  color: #27b46e;
-  font-size: 4rem;
+  color: #d99937;
+  font-size: 3rem;
   text-shadow: 2px 2px 3px #725c3a;
 }
 
 .tea-text label {
-  font-size: 2rem;
-  color: #a2eeeb;
-  text-shadow: 2px 2px 3px #725c3a;
+  color: #4b1f0e;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 3px #936639;
 }
 .tea-drinks-box {
   display: flex;
