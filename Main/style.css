@@ -863,7 +863,7 @@ nav ul li a:hover::after {
       rgba(96, 76, 76, 0.5),
       rgba(96, 76, 76, 0.6)
     ),
-    url("./Assets/header-frappe.jpg");
+    url("../Assets/header-frappe.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -938,7 +938,7 @@ nav ul li a:hover::after {
       rgba(96, 76, 76, 0.5),
       rgba(96, 76, 76, 0.6)
     ),
-    url("./Assets/teabgniange.jpg");
+    url("../Assets/teabgniange.jpg");
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
