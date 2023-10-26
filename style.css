@@ -895,7 +895,7 @@ nav ul li a:hover::after {
 }
 
 .frappe-drinks-box .card-body {
-  padding: 20px;
+  padding: 25px;
   color: white;
   justify-content: center;
   text-align: center;
@@ -910,9 +910,13 @@ nav ul li a:hover::after {
 }
 
 .frappe-drinks-box .card-body h3 {
-  font-size: 18px;
+  font-size: 14.5px;
   padding: 10px 0;
   color: #4b1f0e;
+}
+
+.card-body label {
+  font-size: 13px;
 }
 
 /*Fruit Tea*/
