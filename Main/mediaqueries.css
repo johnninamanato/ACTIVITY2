@@ -22,13 +22,15 @@
 
   .slideshow-container .mySlides .content h2 {
     font-size: 3rem;
-    color: #ff7b00;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 3px 8px 10px black;
     font-family: "Lilita One", sans-serif;
   }
 
   .slideshow-container .mySlides .content h3 {
     font-size: 1.5rem;
-    color: #ff7b00;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 3px 8px 10px black;
     font-family: "Lilita One", sans-serif;
     margin-bottom: 20px;
   }
