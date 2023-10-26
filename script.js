@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loader.style.display = "none";
 
     // Redirect to the main site
-    window.location.href = "index.html";
+    window.location.href = "Main/index.html";
   }, 2000); // 3000 milliseconds = 3 seconds
 });
 
