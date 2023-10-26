@@ -508,8 +508,23 @@ nav ul li a:hover::after {
 
 .slideshow-container .mySlides .content h2 {
   font-size: 7rem;
+  display:grid;
   color: #ff7b00;
   font-family: "Lilita One", sans-serif;
+ animation: typing 2s steps(22), blink .5s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  50% { border-color: transparent }
 }
 
 .slideshow-container .mySlides .content h3 {
@@ -639,6 +654,7 @@ nav ul li a:hover::after {
 .tea-body h2 {
   margin-bottom: 25px;
   color: #37251b;
+  text-shadow: 2px 2px 3px #e4bc84;
 }
 .drinks .drinks-content .hot-coffees-body h2:hover,
 .frappe-coffees-body h2:hover,
@@ -753,6 +769,7 @@ nav ul li a:hover::after {
   font-size: 20px;
   padding: 10px;
   color: #c38423;
+  text-shadow: 2px 2px 3px #4b1f0e;
 }
 
 .shop-box .card-body h3 {
@@ -787,11 +804,13 @@ nav ul li a:hover::after {
 .coffee-text h2 {
   color: #d99937;
   font-size: 3rem;
+  text-shadow: 2px 2px 3px #4b1f0e;
 }
 
 .coffee-text label {
   color: #936639;
   font-size: 1.5rem;
+  text-shadow: 2px 2px 3px #4b1f0e;
 }
 
 .coffee-drinks-box {
@@ -843,11 +862,13 @@ nav ul li a:hover::after {
 .frappe-text h2 {
   color: #d99937;
   font-size: 3rem;
+  text-shadow: 2px 2px 3px #725c3a;
 }
 
 .frappe-text label {
   color: #4b1f0e;
   font-size: 1.5rem;
+  text-shadow: 2px 2px 3px #725c3a;
 }
 
 .frappe-bg .frappe-text {
@@ -946,13 +967,15 @@ nav ul li a:hover::after {
 }
 
 .tea-text h2 {
-  color: #ff8f84;
-  font-size: 3rem;
+  color: #27b46e;
+  font-size: 4rem;
+  text-shadow: 2px 2px 3px #725c3a;
 }
 
 .tea-text label {
-  font-size: 1.5rem;
-  color: #e28e77;
+  font-size: 2rem;
+  color: #a2eeeb;
+  text-shadow: 2px 2px 3px #725c3a;
 }
 .tea-drinks-box {
   display: flex;
@@ -989,16 +1012,7 @@ nav ul li a:hover::after {
   height: 12rem;
 }
 
-.tea-drinks-box .card-body label {
-  font-size: 16px;
-  padding: 10px;
-  color: white;
-  align-items: center;
-  margin-top: 10px;
-}
-
 .tea-drinks-box .card-body h3 {
-  font-size: 16px;
   padding: 10px 0;
   color: #4b1f0e;
 }
@@ -1228,7 +1242,8 @@ footer .footer-box .social-media a {
   background-color: #ffb76b;
   border-radius: 50%;
   font-size: 20px;
-  padding: 10px;
+  margin-bottom: 5px;;
+  padding: 20px;
   display: flex;
   flex: wrap;
 }
